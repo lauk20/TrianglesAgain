@@ -27,5 +27,11 @@ public class Tester{
     //getPerimeter() TESTS
     System.out.println(E.getPerimeter());
     System.out.println(F.getPerimeter());
+
+    System.out.println();
+
+    //getArea() TESTS
+    System.out.println(E.getArea());
+    System.out.println(F.getArea());
   }
 }
