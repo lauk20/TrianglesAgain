@@ -21,4 +21,13 @@ public class Point{
     return y;
   }
 
+  public double distanceTo(Point other){
+    double x1 = this.x;
+    double y1 = this.y;
+    double x2 = other.x;
+    double y2 = other.y;
+
+    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+  }
+
 }
