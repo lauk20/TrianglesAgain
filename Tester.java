@@ -57,5 +57,11 @@ public class Tester{
     System.out.println(M.classify());
     System.out.println(N.classify());
     System.out.println(O.classify());
+
+    System.out.println();
+
+    //toString() TESTS
+    System.out.println(G.toString());
+    System.out.println(H.toString());
   }
 }
