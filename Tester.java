@@ -63,5 +63,11 @@ public class Tester{
     //toString() TESTS
     System.out.println(G.toString());
     System.out.println(H.toString());
+
+    System.out.println();
+
+    //setVertex() TESTS
+    G.setVertex(2, new Point(25,25));
+    System.out.println(G.toString());
   }
 }
