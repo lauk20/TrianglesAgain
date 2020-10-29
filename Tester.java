@@ -33,5 +33,29 @@ public class Tester{
     //getArea() TESTS
     System.out.println(E.getArea());
     System.out.println(F.getArea());
+
+    System.out.println();
+
+    //classifyJ() TESTS
+    Triangle G = new Triangle(0,0,2,0,1,Math.sqrt(3));
+    Triangle H = new Triangle(-4,0,4,0,0,4 * Math.sqrt(3));
+    Triangle I = new Triangle(0,0,3,Math.sqrt(3),3,-Math.sqrt(3));
+    System.out.println(G.classify());
+    System.out.println(H.classify());
+    System.out.println(I.classify());
+    System.out.println();
+    Triangle J = new Triangle(2,6,8,2,11,13);
+    Triangle K = new Triangle(-2,3,2,-1,-5,-4);
+    Triangle L = new Triangle(4,2,8,2,6,7);
+    System.out.println(J.classify());
+    System.out.println(K.classify());
+    System.out.println(L.classify());
+    System.out.println();
+    Triangle M = new Triangle(0,0,5,0,0,1);
+    Triangle N = new Triangle(-5,0,-1,0,-2,5);
+    Triangle O = new Triangle(10,5,12,15,3,5);
+    System.out.println(M.classify());
+    System.out.println(N.classify());
+    System.out.println(O.classify());
   }
 }

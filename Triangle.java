@@ -23,12 +23,30 @@ public class Triangle{
   }
 
   public double getArea(){
-  double semiPerimeter = getPerimeter()/2;
-  double side1 = v1.distanceTo(v2);
-  double side2 = v2.distanceTo(v3);
-  double side3 = v3.distanceTo(v1);
+    double semiPerimeter = getPerimeter()/2;
+    double side1 = v1.distanceTo(v2);
+    double side2 = v2.distanceTo(v3);
+    double side3 = v3.distanceTo(v1);
 
-  return (Math.sqrt(semiPerimeter * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3)));
+    return (Math.sqrt(semiPerimeter * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3)));
+  }
+
+  public String classify(){
+    double side1 = Math.round(v1.distanceTo(v2) * Math.pow(10, 4))/Math.pow(10, 4);
+    double side2 = Math.round(v2.distanceTo(v3) * Math.pow(10, 4))/Math.pow(10, 4);
+    double side3 = Math.round(v3.distanceTo(v1) * Math.pow(10, 4))/Math.pow(10, 4);
+
+    System.out.println(side1);
+
+    if (side1 == side2 && side2 == side3){
+      return "equilateral";
+    }
+    else{
+      if (side1 == side2 || side1 == side3 || side2 == side3){
+        return "isosceles";
+      }
+    }
+    return "scalene";
   }
 
 }
