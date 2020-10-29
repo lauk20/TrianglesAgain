@@ -7,6 +7,14 @@ public class Tester{
     System.out.println(A.distanceTo(B));
 
     System.out.println();
-    
+
+    //equals() TESTS
+    Point C = new Point(A);
+    System.out.println(A.equals(B)); //FALSE
+    System.out.println(C.equals(C)); //TRUE
+    System.out.println(A.equals(C)); //TRUE
+    System.out.println(C.equals(A)); //TRUE
+    System.out.println(B.equals(C)); //FALSE
+
   }
 }
