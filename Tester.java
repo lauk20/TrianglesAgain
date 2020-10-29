@@ -16,9 +16,16 @@ public class Tester{
     System.out.println(C.equals(A)); //TRUE
     System.out.println(B.equals(C)); //FALSE
 
+
     //CONSTRUCTOR TESTS
     Point D = new Point(4, 0);
     Triangle E = new Triangle(A, B, D);
     Triangle F = new Triangle(0,0,4,3,4,0);
+
+    System.out.println();
+
+    //getPerimeter() TESTS
+    System.out.println(E.getPerimeter());
+    System.out.println(F.getPerimeter());
   }
 }
