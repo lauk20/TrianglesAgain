@@ -16,5 +16,8 @@ public class Tester{
     System.out.println(C.equals(A)); //TRUE
     System.out.println(B.equals(C)); //FALSE
 
+    //CONSTRUCTOR TESTS
+    Point D = new Point(4, 0);
+    Triangle E = new Triangle(A, B, D);
   }
 }
