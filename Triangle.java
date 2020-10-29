@@ -36,8 +36,6 @@ public class Triangle{
     double side2 = Math.round(v2.distanceTo(v3) * Math.pow(10, 4))/Math.pow(10, 4);
     double side3 = Math.round(v3.distanceTo(v1) * Math.pow(10, 4))/Math.pow(10, 4);
 
-    System.out.println(side1);
-
     if (side1 == side2 && side2 == side3){
       return "equilateral";
     }
