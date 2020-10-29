@@ -19,5 +19,6 @@ public class Tester{
     //CONSTRUCTOR TESTS
     Point D = new Point(4, 0);
     Triangle E = new Triangle(A, B, D);
+    Triangle F = new Triangle(0,0,4,3,4,0);
   }
 }
