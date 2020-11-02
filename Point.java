@@ -31,7 +31,7 @@ public class Point{
   }
 
   public boolean equals(Point other){
-    return this.distanceTo(other) == 0;
+    return other != null && this.distanceTo(other) == 0;
   }
 
 }
